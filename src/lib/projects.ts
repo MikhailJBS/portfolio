@@ -3,7 +3,7 @@ import sirek from "../../public/assets/sirek.png"
 import fontana from "../../public/assets/fontana-web.jpg"
 import bujaopedia from "../../public/assets/bujaopedia.png"
 import apapmedika from "../../public/assets/apapmedika.png"
-import no_bs from "../../public/assets/no_bs.png"
+import placeholder from "../../public/assets/placeholder.png"
 import fontanaMobile from "../../public/assets/fontana-mobile.png"
 import type { StaticImageData } from "next/image"
 
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     description: "A Simple chat application with no bs",
     longDescription:
       "This project is a simple chat application designed to provide a no-frills messaging experience. It features real-time messaging, user authentication, and a clean interface. The app is built with a focus on performance and ease of use, making it ideal for quick conversations without unnecessary distractions. It includes features like direct messaging, group chats, and access to some LLM Models.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: placeholder,
     technologies: ["React JS", "Tailwind CSS", "Express JS", "Socket.IO", "MongoDB", "OpenRouter API", "Cloudinary"],
     year: 2025,
     client: "Personal Project",

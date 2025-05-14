@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import placeholder from "../../../../public/assets/placeholder.png"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ExternalLink, Github } from "lucide-react"
 import { projects } from "@/lib/projects"
@@ -33,13 +34,13 @@ export default function ProjectPage({ params }: { readonly params: { readonly sl
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
-            <div className="aspect-video relative rounded-lg overflow-hidden border border-white/10">
+            <div className="relative w-full rounded-lg overflow-hidden border border-white/10 bg-white">
               <Image
-                src={project.image || "/placeholder.svg?height=600&width=800"}
+                src={project.image || placeholder}
                 alt={project.title}
                 width={800}
                 height={600}
-                className="object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="space-y-4">
