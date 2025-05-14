@@ -22,7 +22,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="p-4 space-y-2">
         <div className="flex items-start justify-between">
           <h3 className="font-bold text-lg">{project.title}</h3>
-          <span className="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded-full">{project.type}</span>
+          <span className="text-xs bg-purple-400/20 text-purple-300 px-2 py-1 rounded-full">{project.type}</span>
         </div>
         <p className="text-sm text-gray-400 line-clamp-2">{project.description}</p>
         <div className="flex flex-wrap gap-1 pt-2">
@@ -37,7 +37,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <Link
           href={`/projects/${project.slug}`}
-          className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+          className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-purple-300 hover:text-purple-200 transition-colors"
         >
           View Details <ArrowUpRight className="h-4 w-4" />
         </Link>
