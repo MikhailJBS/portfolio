@@ -162,7 +162,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center rounded-md bg-purple-400 px-6 py-3 text-sm font-medium text-white hover:bg-blue-600 transition-colors"
+                className="inline-flex items-center justify-center rounded-md bg-purple-400 px-6 py-3 text-sm font-medium text-white hover:bg-purple-500 transition-colors"
               >
                 View My Work
               </a>
@@ -509,7 +509,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center rounded-md bg-purple-400 px-5 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 transition-all"
+                    className="w-full inline-flex items-center justify-center rounded-md bg-purple-400 px-5 py-3 text-sm font-medium text-white hover:bg-purple-500 focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 transition-all"
                   >
                     Send Message
                   </button>
@@ -523,7 +523,7 @@ export default function Home() {
       {/* Back to top button */}
       <Link
         href="/"
-        className="fixed bottom-6 right-6 w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-blue-600 transition-colors"
+        className="fixed bottom-6 right-6 w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-purple-500 transition-colors"
         aria-label="Back to top"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
