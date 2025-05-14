@@ -154,7 +154,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              Hi, I'm <span className="text-blue-500">Mikhail</span>
+              Hi, I&rsquo;m <span className="text-blue-500">Mikhail</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300">
               A passionate web developer building modern, secure, and user-friendly applications
@@ -192,11 +192,11 @@ export default function Home() {
             
             <div className="md:w-2/3 space-y-6">
               <p className="text-lg text-gray-300">
-                I'm a web developer with a passion for creating functional, user-friendly, and secure websites. I
+                I&rsquo;m a web developer with a passion for creating functional, user-friendly, and secure websites. I
                 specialize in modern frontend and backend frameworks, mainly working with Javascript and Typescript.
               </p>
               <p className="text-lg text-gray-300">
-                I've worked on a variety of projects ranging from personal fun projects, complex multiservices, to enterprise level projects
+                I&rsquo;ve worked on a variety of projects ranging from personal fun projects, complex multiservices, to enterprise level projects
                 with some renowned clients.
               </p>
               
@@ -219,7 +219,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-2">My Skills</h2>
             <div className="h-1 w-12 bg-blue-500 mx-auto mb-6"></div>
             <p className="text-gray-300">
-              I've worked with various technologies across the full stack development spectrum. 
+              I&rsquo;ve worked with various technologies across the full stack development spectrum. 
               Here are my areas of expertise:
             </p>
           </div>
@@ -391,7 +391,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
               <div className="h-1 w-12 bg-blue-500 mx-auto mb-6"></div>
               <p className="text-gray-300 max-w-lg mx-auto">
-                Have a project in mind or want to chat? Feel free to reach out! I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                Have a project in mind or want to chat? Feel free to reach out! I&rsquo;m always open to discussing new projects, creative ideas or opportunities to be part of your vision.
               </p>
             </div>
             
@@ -521,7 +521,7 @@ export default function Home() {
       </section>
 
       {/* Back to top button */}
-      <a
+      <Link
         href="/"
         className="fixed bottom-6 right-6 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-lg z-50 hover:bg-blue-600 transition-colors"
         aria-label="Back to top"
@@ -529,7 +529,7 @@ export default function Home() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
-      </a>
+      </Link>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 md:py-12">

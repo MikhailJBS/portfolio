@@ -1,21 +1,26 @@
-import Image from "next/image"
-import Link from "next/link"
-import placeholder from "../../../../public/assets/placeholder.png"
-import { notFound } from "next/navigation"
-import { ArrowLeft, ExternalLink, Github } from "lucide-react"
-import { projects } from "@/lib/projects"
+import Image from "next/image";
+import Link from "next/link";
+import placeholder from "../../../../public/assets/placeholder.png";
+import { notFound } from "next/navigation";
+import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { projects } from "@/lib/projects";
+
+interface ProjectPageProps {
+  readonly params: Promise<{ slug: string }>;
+}
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
-  }))
+  }));
 }
 
-export default function ProjectPage({ params }: { readonly params: { readonly slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const resolvedParams = await params;
+  const project = projects.find((p) => p.slug === resolvedParams.slug);
 
   if (!project) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -105,5 +110,5 @@ export default function ProjectPage({ params }: { readonly params: { readonly sl
         </div>
       </div>
     </div>
-  )
+  );
 }
