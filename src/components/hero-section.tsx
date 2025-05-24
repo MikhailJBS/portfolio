@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring, AnimatePresence, MotionValue } from 'framer-motion';
 import { Download, ArrowDown, Code2, Sparkles, Zap, LucideIcon } from 'lucide-react';
 
@@ -28,11 +28,6 @@ interface FloatingIconProps {
   color: string;
   position: string;
   delay: number;
-}
-
-interface MousePosition {
-  x: number;
-  y: number;
 }
 
 const FloatingParticle: React.FC<FloatingParticleProps> = ({ delay, duration, x, y }) => (
@@ -167,7 +162,6 @@ const buttonVariants = {
 };
 
 const Hero: React.FC = () => {
-  const [mousePos, setMousePos] = useState<MousePosition>({ x: 50, y: 50 });
   
   // Mouse tracking
   const mouseX: MotionValue<number> = useMotionValue(50);
@@ -312,7 +306,7 @@ const Hero: React.FC = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    Hi, I'm
+                    Hi, I&apos;m
                   </motion.span>
                   <motion.span 
                     className="block shimmer-text text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600"

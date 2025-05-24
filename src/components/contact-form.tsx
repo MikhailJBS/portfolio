@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 const childVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -16,22 +15,11 @@ const childVariants = {
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
 
-interface ContactFormData {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
-
-interface ChangeEventType extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> {}
-
-const handleChange = (e: ChangeEventType) => {
+const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
 };
 
-interface HandleSubmitEvent extends React.FormEvent<HTMLFormElement> {}
-
-const handleSubmit = (e: HandleSubmitEvent) => {
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const mailtoLink = `mailto:mikhailharitz@gmail.com?subject=${encodeURIComponent(
         formData.subject

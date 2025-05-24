@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Linkedin, Twitter, Mail, Download, Github, Phone, MapPin, Menu, X, ArrowBigUpDash } from "lucide-react";
+import { ArrowRight, Linkedin, Twitter, Mail, Github, Phone, MapPin, Menu, X, ArrowBigUpDash } from "lucide-react";
 import { ProjectCarousel } from "@/components/project-carousel";
 import Hero from "@/components/hero-section";
 import ContactForm from "@/components/contact-form";
